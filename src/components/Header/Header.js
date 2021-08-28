@@ -62,12 +62,14 @@ const MainHeader = styled.div`
   @media ${QUERIES.phone} {
     padding: 18px 16px;
   }
+  overflow-x: auto;
 `;
 
 const Nav = styled.nav`
   display: flex;
-  gap: 48px;
+  gap: clamp(1rem, 7vw - 3rem, 4rem);
   margin: 0px 48px;
+  margin-right: 0;
   @media ${QUERIES.tabletAndDown} {
     display: none;
   }
