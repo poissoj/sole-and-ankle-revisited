@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import { DialogOverlay, DialogContent } from '@reach/dialog';
 
-import { COLORS, QUERIES, WEIGHTS } from '../../constants';
+import { QUERIES } from '../../constants';
 
 import UnstyledButton from '../UnstyledButton';
 import Icon from '../Icon';
@@ -46,7 +46,7 @@ const Overlay = styled(DialogOverlay)`
 
 const Content = styled(DialogContent)`
   width: 300px;
-  background: ${COLORS.white};
+  background: var(--color-white);
   position: absolute;
   right: 0;
   top: 0;
@@ -80,20 +80,20 @@ const NavLink = styled.a`
   font-size: ${18/16}rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: ${COLORS.gray[900]};
-  font-weight: ${WEIGHTS.medium};
+  color: var(--color-gray-900);
+  font-weight: var(--font-weight-medium);
   line-height: 21px;
 
   &:first-of-type {
-    color: ${COLORS.secondary};
+    color: var(--color-secondary);
   }
 `;
 
 const FooterLink = styled.a`
   font-size: ${14/16}rem;
   text-decoration: none;
-  color: ${COLORS.gray[700]};
-  font-weight: ${WEIGHTS.normal};
+  color: var(--color-gray-700);
+  font-weight: var(--font-weight-normal);
 `;
 
 export default MobileMenu;
